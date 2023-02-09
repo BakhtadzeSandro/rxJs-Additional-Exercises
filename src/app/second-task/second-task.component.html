@@ -1,0 +1,6 @@
+<input type="text" (input)="changeItemName($event)">
+<div>
+  <ul>
+    <li *ngFor="let item of search$ | async">{{item.name}}</li>
+  </ul>
+</div>

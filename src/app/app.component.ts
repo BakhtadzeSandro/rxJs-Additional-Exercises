@@ -19,6 +19,7 @@ export class AppComponent {
     return this.appService.jobs;
   }
 
+  // forkJoin and switchMap
   getPeople(job: string[]): Observable<String[]> {
     return of(
       this.persons.filter(person => {
@@ -30,6 +31,7 @@ export class AppComponent {
       })
     );
   }
+
 
 
   ngOnInit(){

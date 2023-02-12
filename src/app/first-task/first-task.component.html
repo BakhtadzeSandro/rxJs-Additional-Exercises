@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="task-2">
-    <div class="item-box" *ngFor="let movie of movies">
+  <div class="task-2" (scroll)="nextScroll($event)">
+    <div class="item-box" *ngFor="let movie of movies.slice(0, loadedItems)">
       <p>{{ movie.name }}</p>
     </div>
   </div>

@@ -9,6 +9,7 @@ import { ThirdTaskComponent } from './third-task/third-task.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
+
 @NgModule({
   declarations: [			
     AppComponent,
